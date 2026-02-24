@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Minesweeper Beta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💣 Minesweeper</h1>
+
+<div class="controls">
+  <select id="level">
+    <option value="easy">Easy (8x8, 10 bombs)</option>
+    <option value="medium">Medium (12x12, 25 bombs)</option>
+    <option value="hard">Hard (16x16, 50 bombs)</option>
+  </select>
+  <button onclick="startGame()">Restart</button>
+</div>
+
+<div class="info">
+  ⏱️ Time: <span id="timer">0</span> |
+  💣 Bombs Left: <span id="bombCount">0</span>
+</div>
+
+<div id="board"></div>
+<div id="statusMessage" style="margin-top:10px;font-size:20px;font-weight:bold;"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
