@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  grid-gap: 2px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  background: #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.opened {
+  background: #e0e0e0;
+  cursor: default;
+}
+
+.mine {
+  background: red;
+}
+
+.flag {
+  background: orange;
+}
+
+#status {
+  margin-top: 15px;
+  font-weight: bold;
+}
