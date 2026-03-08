@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Minesweeper Super Advance</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="game">
+
+<h1>💣 Minesweeper</h1>
+
+<div class="topbar">
+
+<div class="counter">
+⏱ <span id="timer">0</span>
+</div>
+
+<button id="faceButton" onclick="startGame()">🙂</button>
+
+<div class="counter">
+💣 <span id="bombsLeft">0</span>
+</div>
+
+</div>
+
+<div class="controls">
+
+<select id="level">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+
+<button onclick="startGame()">Restart</button>
+<button onclick="toggleTheme()">🌙</button>
+<button onclick="giveHint()">💡</button>
+
+</div>
+
+<div class="info">
+
+🏆 Best: <span id="bestScore">-</span>
+
+</div>
+
+<div class="stats">
+
+Games: <span id="totalGames">0</span> |
+Wins: <span id="totalWins">0</span> |
+Rate: <span id="winRate">0%</span>
+
+</div>
+
+<div id="board"></div>
+
+<div id="statusMessage"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
