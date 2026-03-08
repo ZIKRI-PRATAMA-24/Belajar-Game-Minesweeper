@@ -1,0 +1,113 @@
+:root {
+  --bg: #1e1e2f;
+  --cell: #3a3a5a;
+  --opened: #e0e0e0;
+  --text: white;
+}
+
+body.light {
+  --bg: #f4f4f4;
+  --cell: #c7c7c7;
+  --opened: #ffffff;
+  --text: black;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:var(--bg);
+color:var(--text);
+text-align:center;
+}
+
+h1{margin-top:20px;}
+
+.controls{
+margin:10px;
+}
+
+button,select{
+padding:6px 10px;
+margin:5px;
+border-radius:6px;
+border:none;
+cursor:pointer;
+}
+
+#board{
+display:grid;
+justify-content:center;
+margin:20px auto;
+gap:3px;
+}
+
+.cell{
+width:32px;
+height:32px;
+background:var(--cell);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+border-radius:6px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.cell:hover{
+transform:scale(1.05);
+}
+
+.opened{
+background:var(--opened);
+color:black;
+animation:openCell .15s ease;
+}
+
+.mine{
+background:crimson;
+color:white;
+}
+
+.flag{
+background:orange;
+}
+
+.info{
+margin-top:10px;
+}
+
+.stats{
+margin-top:5px;
+font-size:14px;
+}
+
+#statusMessage{
+margin-top:10px;
+font-size:22px;
+font-weight:bold;
+}
+
+/* number colors */
+
+.cell[data-num="1"]{color:#1976d2;}
+.cell[data-num="2"]{color:#388e3c;}
+.cell[data-num="3"]{color:#d32f2f;}
+.cell[data-num="4"]{color:#7b1fa2;}
+.cell[data-num="5"]{color:#ff8f00;}
+.cell[data-num="6"]{color:#00838f;}
+.cell[data-num="7"]{color:#5d4037;}
+.cell[data-num="8"]{color:#455a64;}
+
+@keyframes openCell{
+from{transform:scale(.8);}
+to{transform:scale(1);}
+}
+
+@media(max-width:600px){
+.cell{
+width:26px;
+height:26px;
+font-size:12px;
+}
+}
