@@ -1,0 +1,105 @@
+/* .parent {
+  display: flex;
+  justify-content: center; 
+}
+
+.box {
+    margin-top: 190px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    
+}
+
+.box button {
+    border: none;
+    background-color: green;
+    padding-top: 8px;
+    color: white;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.box section {
+    cursor: pointer;
+    border: none;
+} */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background gradasi */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #00ff9d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Judul */
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Card box */
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+
+  /* shadow keren */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s ease;
+}
+
+/* efek hover */
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Select */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+select:focus {
+  border-color: #00c6ff;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00c6ff, #00ff9d);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover button */
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}

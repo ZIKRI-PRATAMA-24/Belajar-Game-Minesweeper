@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minesweeper Advanced</title>
+    <link rel="stylesheet" href="../assets/css/style-v1.3.css" />
+  </head>
+  <body>
+    <h1>💣 Minesweeper Advanced</h1>
+
+    <div class="controls">
+      <select id="level">
+        <option value="easy">Easy (8x8,10)</option>
+        <option value="medium">Medium (12x12,25)</option>
+        <option value="hard">Hard (16x16,50)</option>
+      </select>
+      <button onclick="startGame()">Restart</button>
+      <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+    </div>
+
+    <div class="info">
+      ⏱️ <span id="timer">0</span>s | 💣 <span id="bombsLeft">0</span> | 🏆
+      Best: <span id="bestScore">-</span>
+    </div>
+
+    <div id="board"></div>
+    <div id="statusMessage" style="margin-top:10px;font-size:22px;font-weight:bold;"></div>
+    <br><br>
+    <button onclick="submitQuit()" class="btn-merah">Quit</button>
+    <script src="../assets/script/script-v1.3.js"></script>
+  </body>
+</html>

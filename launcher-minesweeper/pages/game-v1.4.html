@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper Super Advence</title>
+    <link rel="stylesheet" href="../assets/css/style-v1.4.css">
+</head>
+
+<body>
+
+    <h1>💣 Minesweeper Super Advence</h1>
+
+    <div class="controls">
+
+        <select id="level">
+            <option value="easy">Easy (8x8,10)</option>
+            <option value="medium">Medium (12x12,25)</option>
+            <option value="hard">Hard (16x16,50)</option>
+        </select>
+
+        <button onclick="startGame()">Restart</button>
+        <button onclick="toggleTheme()">🌙 Theme</button>
+
+    </div>
+
+    <div class="info">
+        ⏱️ <span id="timer">0</span>s |
+        💣 <span id="bombsLeft">0</span> |
+        🏆 Best: <span id="bestScore">-</span>
+    </div>
+
+    <div class="stats">
+        Games: <span id="totalGames">0</span> |
+        Wins: <span id="totalWins">0</span> |
+        Win Rate: <span id="winRate">0%</span>
+    </div>
+
+    <div id="board"></div>
+
+    <div id="statusMessage"></div>
+    <br>
+    <br>
+    <button onclick="submitQuit()" class="btn-merah">Quit</button>
+    <script src="../assets/script/script-v1.4.js"></script>
+
+</body>
+
+</html>

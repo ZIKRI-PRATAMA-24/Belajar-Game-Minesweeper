@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.controls {
+    margin: 15px;
+}
+
+button,
+select {
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#board {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    background: #3a3a5a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.cell:hover {
+    background: #50507a;
+}
+
+.opened {
+    background: #dcdcdc;
+    color: black;
+    cursor: default;
+}
+
+.mine {
+    background: crimson;
+    color: white;
+}
+
+.flag {
+    background: orange;
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 18px;
+}
